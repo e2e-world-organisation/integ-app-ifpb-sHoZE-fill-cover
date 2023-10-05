@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-miku
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay-or-not-to-quay/nbe-e2e-qcox-tenant/integ-app-ifpb/hacbs-test-project-miku@sha256:76937c933807da51f06dddedffad6eba71e51f0f370682512edfa3b7bb785790
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
